@@ -1,8 +1,3 @@
-import subprocess
-import sys
-
-# Comprobar si yfinance está instalado, si no, instalarlo
-
 import yfinance as yf
 import pandas as pd
 import datetime
@@ -112,4 +107,5 @@ if st.button("Ejecutar Screener"):
             st.download_button(label="Descargar resultados", data="resultados_screener.csv", file_name="resultados_screener.csv")
         else:
             st.warning("No se detectaron señales relevantes.")
+
 
